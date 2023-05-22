@@ -29,7 +29,7 @@
     <body></body>
 
 <div class="title">
-<h2>A project made by Kyle Yuzon</h2>
+<p>Citation</p>
 </div>
 
 <div class="container">
@@ -39,6 +39,7 @@
     </div>
 
 <div class="box">
+    <p>
     https://www.kofc.org/ 
     <br>
     <br>
@@ -49,7 +50,7 @@
     https://www.wikihow.com/Join-the-Knights-of-Columbus 
     <br><br>
     https://youtu.be/VjP3EKQJq1o 
-    
+    </p>
 </div>
 
 </div>
@@ -99,6 +100,7 @@
 
     .title {
         text-align: center;
+        font-size: 60px;
     }
 
     body {
@@ -113,11 +115,18 @@
         text-align: center;
         position: relative;
         float: right;
-    
-        background-color: lightgray;
-
-       
+        text-align: left;
+        background-color: rgb(230, 230, 230);
+        padding: 45px;
         
+    }
+    p {
+        animation: fadein 4s;
+        animation-name: fade;
+    }
+    @keyframes fade {
+        0% { opacity: 0;}
+        100% { opacity: 1;}
     }
 
     .imag {
