@@ -21,7 +21,7 @@
     </div>
     
     <div class="right2">
-    <a href="https://sprojectr.github.io/KnightsOfColumbus/citations.htm">
+    <a href="https://sprojectr.github.io/KnightsOfColumbus/citation.htm">
         Citations
            </a>
            </div>
@@ -32,14 +32,27 @@
 <h2>A project made by Kyle Yuzon</h2>
 </div>
 
+<div class="container">
+
+    <div class="imag">
+
+    </div>
 
 <div class="box">
-
-<div class="cit">
-    <a href="https://www.kofc.org/">https://www.kofc.org/</a>
-
+    https://www.kofc.org/ 
+    <br>
+    <br>
+    https://en.wikipedia.org/wiki/Knights_of_Columbus 
+    <br><br>
+    https://www.thecanadianencyclopedia.ca/en/article/knights-of-colombus-in-canada 
+    <br><br>
+    https://www.wikihow.com/Join-the-Knights-of-Columbus 
+    <br><br>
+    https://youtu.be/VjP3EKQJq1o 
+    
 </div>
 
+</div>
 
 <style>
     #knights {
@@ -89,9 +102,6 @@
     }
 
     body {
-        background-image: url("tbanner.jpg");
-        background-size: 100% 100%;
-        border-image-repeat: no-repeat;
         backdrop-filter: blur(8px) brightness (80%);
     }
 
@@ -101,24 +111,29 @@
         height: 450px;
         width: 40%;
         text-align: center;
-        margin:auto;
+        position: relative;
+        float: right;
+    
         background-color: lightgray;
 
        
         
     }
-    .sort {
-        display:flex;
-        flex-direction: column;
 
-        align-items: center;
-        
-
+    .imag {
+        position: relative;
+        background-color: gold;
+        height: 450px;
+        width: 30%;
+        float: left;
+        background-image: url("Columbus.jpg");
     }
 
-.cit {
-    text-decoration: none;
-    text-align: center;
+    .container {
+        height: 500px;
+        display: flex;
+        justify-content: space-evenly;
+    }
     
 
     footer {
