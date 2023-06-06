@@ -39,22 +39,21 @@
 <div class="popup" id="pop">
 <div class="gg-close-r" id="close" onclick="remove(pop)"></div>
 <h2>Apologies for the late return</h2>
-<p>Reasons -</p>
-<ul>
-    <il>Lazy</il>
-    <li>Lazy</li>
-    <li>Lazy</li>
-    <li>lazy</li>
-    <li>lazy</li>
+  <p>Update 1.1</p>
+<ul id="lis">
+    
+   <il>Header Fix<il>
+    <li>About Section expanded</li>
+    <li>More to come!</li>
+ 
+ 
 </ul>
 
-<div class="news" id="N">
-    <h2>news</h2>
-    <p>news contex</p>
+
 </div>
 
 </div>
-<div class="sort">
+<div class="sort" id="sor">
    <button class="b1" onclick="window.location.href = 'https://sprojectr.github.io/KnightsOfColumbus/slides1.htm'">Overview</button>
    <button class="b2" onclick="window.location.href ='https://sprojectr.github.io/KnightsOfColumbus/stuff.htm'">Extra's</button>
    <button class="b3" onclick="window.location.href ='https://sprojectr.github.io/KnightsOfColumbus/AboutC.htm'">About</button>
@@ -62,198 +61,198 @@
 </div>
 
 </div>
-
-
-
-</div>
-
 <style>
-    #knights {
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    
-    .right2 {
+#knights {
+    font-size: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.right2 {
+    float:right;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+    .right {
         float:right;
         text-decoration: none;
         font-size: 20px;
-        margin-right: 30px;
+        margin-right: 1px;
     }
+
+
+.left {
+    float:left;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
     
-        .right {
-            float:right;
-            text-decoration: none;
-            font-size: 20px;
-            margin-right: 1px;
-        }
+.header {
+    Background: rgb(11, 11, 34);
+    Color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-align: center; 
+    font-size: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+body {
+    background-image: url("tbanner.jpg");
+    background-size: 100% 100%;
+    border-image-repeat: no-repeat;
+    backdrop-filter: blur(8px) brightness (80%);
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    width: 40%;
+    text-align: center;
+    margin:auto;
+    background-color: rgba(128,128,128,.5);
+    z-index: -1;
+  
+
+   
     
-    
-    .left {
-        float:left;
-        text-align: center;
-        text-decoration: none;
-        font-size: 20px;
-    }
-        
-    .header {
-        Background: rgb(11, 11, 34);
-        Color: white;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        padding: 10px 30px;
-        text-decoration: none;
-        text-align: center; 
-        font-size: 20px;
-    }
-
-    .title {
-        text-align: center;
-    }
-
-    body {
-        background-image: url("tbanner.jpg");
-        background-size: 100% 100%;
-        border-image-repeat: no-repeat;
-        backdrop-filter: blur(8px) brightness (80%);
-    }
-
-
-    .box {
-        display: flex;
-        justify-content: center;
-        height: 450px;
-        width: 40%;
-        text-align: center;
-        margin:auto;
-        background-color: rgba(128,128,128,.5);
-        z-index: -1;
-
-       
-        
-    }
-    .popup {
-  margin: auto;
-  background-color: lightcyan;
-  height: 600px;
-  width: 450px;
+}
+.popup {
+margin: auto;
+background-color: lightcyan;
+height: 330px;
+width: 450px;
+  padding: 25px;
 }
 
 .gg-close-r {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 22px;
-    height: 22px;
-    border: 2px solid;
-    border-radius: 4px;
-      float: right;
+box-sizing: border-box;
+position: relative;
+display: block;
+transform: scale(var(--ggs,1));
+width: 22px;
+height: 22px;
+border: 2px solid;
+border-radius: 4px;
+  float: right;
 }
 .gg-close-r::after,
 .gg-close-r::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 12px;
-    height: 2px;
-    background: currentColor;
-    transform: rotate(45deg);
-    border-radius: 5px;
-    top: 8px;
-    left: 3px
+content: "";
+display: block;
+box-sizing: border-box;
+position: absolute;
+width: 12px;
+height: 2px;
+background: currentColor;
+transform: rotate(45deg);
+border-radius: 5px;
+top: 8px;
+left: 3px
 }
 .gg-close-r::after {
-    transform: rotate(-45deg)
+transform: rotate(-45deg)
 }
 
-    .sort {
-        display:flex;
-        flex-direction: column;
+.sort {
+    display:flex;
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    
 
-        align-items: center;
-        
-
-    }
+}
 
 .b1,.b2,.b3,.b4{
-    Background-color: gold;
-    width: 120px;
-    height: 65px;
-    margin: auto;
-    font-size: 25px;
-    border: none;
-    border-radius: 10px;
-    
-    
-    
+Background-color: gold;
+width: 120px;
+height: 65px;
+margin: auto;
+font-size: 25px;
+border: none;
+border-radius: 10px;
+
+
+
 }
 
-    .b1:hover,.b2:hover,.b3:hover,.b4:hover {
-        background-color:goldenrod;
-        border: solid;
-        border-radius: 0.5px;
-        border-color:black;
-        border-radius: 10px;
-        
-
-
-
-    }
-    
-
-    footer {
-        background-color: rgb(11, 11, 34);
-        width: 100%;
-        height: 320px;
-        margin-bottom: 0;
-        text-align: center;
-        padding: 30px;
-        color: black;
-    }
-    .foot {
-        display: grid; 
-        grid-template-columns: 30% 30%;
-        grid-template-rows: 30% 30%;
-        Text-align: center;
-        Justify-content: center;
-        margin: auto;
-        text-decoration: none;
-        Color: black;
-        gap: 2em;
-
-    }
-
-    .foot:hover {
-        text-decoration: underline;
-    }
-    a:hover{
-       color: gold;
-   
-    
-
-    }
-
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-
-    .c {
-        color: white;
-    }
+.b1:hover,.b2:hover,.b3:hover,.b4:hover {
+    background-color:goldenrod;
+    border: solid;
+    border-radius: 0.5px;
+    border-color:black;
+    border-radius: 10px;
     
 
 
 
+}
 
+
+footer {
+    background-color: rgb(11, 11, 34);
+    width: 100%;
+    height: 320px;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 30px;
+    color: black;
+}
+.foot {
+    display: grid; 
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 30% 30%;
+    Text-align: center;
+    Justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    Color: black;
+    gap: 2em;
+
+}
+
+.foot:hover {
+    text-decoration: underline;
+}
+a:hover{
+   color: gold;
+
+
+
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.c {
+    color: white;
+
+}
+
+#lis {
+text-align:left;
+border: solid;
+padding: 20px;
+list-style-type: disc;
+height: 180px;
+}
 </style>
-
 <div>
     <body>
         <br>
@@ -282,15 +281,20 @@
 <html>
     <body>
 <script>
+
 function remove(el) {
     var element = el;
     element.remove();
 }
+ document.getElementById("pop").addEventListener("click", function() {
+            let mysor = document.getElementById("sor");
+mysor.style.display = "block";
+   mysor.style.display = "flex";
+   mysor.style.alignItems = "center";
+   
+});
 
 
-</script>
-
-<script>
     window.onscroll = function() {myFunction()};
     
     var header = document.getElementById("myHeader");
@@ -303,6 +307,7 @@ function remove(el) {
         header.classList.remove("sticky");
       }
     }
-    </script>
-</body>
-    </html>
+
+</script>
+    </body>
+</html>
